@@ -10,60 +10,70 @@
 </head>
 <body>
 
-    <h1>CSV Product Pricing Tool</h1>
+    <!-- Main Heading Section -->
+    <section class="hero-section">
+        <h1>SMART DYNAMIC PRICING SYSTEM</h1>
+    </section>
+    
 
     <!-- File Upload Section -->
-    <div class="upload-container">
-        <input type="file" id="csvFile" accept=".csv">
-        <button id="loadFileBtn" onclick="loadCSVFile()">Load File</button>
-        <button id="uploadButton" onclick="uploadCSVData()">Upload</button>
-        <p id="fileName"></p>
-    </div>
+    <section class="upload-section">
+        <div class="upload-container">
+            <input type="file" id="csvFile" accept=".csv">
+            <button id="loadFileBtn" onclick="loadCSVFile()">Load File</button>
+            <button id="uploadButton" onclick="uploadCSVData()">Upload</button>
+            <p id="fileName"></p>
+        </div>
 
-    <!-- Rules Section -->
-    <div class="rules-container">
-        <h2><i class="fas fa-info-circle"></i> Uploading Guidelines</h2>
-        <ul class="rules-list">
-            <li><i class="fas fa-check-circle"></i> Ensure file is in CSV format.</li>
-            <li><i class="fas fa-check-circle"></i> File should have headers as the first row.</li>
-            <li><i class="fas fa-check-circle"></i> Click "Upload" after selecting a file.</li>
-            <li><i class="fas fa-check-circle"></i> Use "Calculate" to determine the final price.</li>
-            <li><i class="fas fa-check-circle"></i> Download the updated CSV for your records.</li>
-        </ul>
-    </div>
+        <div class="rules-container">
+            <h2><i class="fas fa-info-circle"></i> Uploading Guidelines</h2>
+            <ul class="rules-list">
+                <li><i class="fas fa-check-circle"></i> Ensure file is in CSV format.</li>
+                <li><i class="fas fa-check-circle"></i> File should have headers as the first row.</li>
+                <li><i class="fas fa-check-circle"></i> Click "Upload" after selecting a file.</li>
+                <li><i class="fas fa-check-circle"></i> Use "Calculate" to determine the final price.</li>
+                <li><i class="fas fa-check-circle"></i> Download the updated CSV for your records.</li>
+            </ul>
+        </div>
+    </section>
 
-    <!-- Pricing Table (Initially Hidden) -->
-    <div class="table-container">
-        <table id="pricingTable">
-            <thead>
-                <tr>
-                    <th>Product ID</th>
-                    <th>Product Name</th>
-                    <th>Category</th>
-                    <th>Demand</th>
-                    <th>Time of Day</th>
-                    <th>Weather Condition</th>
-                    <th>Stock Level</th>
-                    <th>Location</th>
-                    <th>Season</th>
-                    <th>Price Sensitivity</th>
-                    <th>Competitor Price</th>
-                    <th>Promotion</th>
-                    <th>Base Price</th>
-                    <th>Final Price</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Rows will be inserted dynamically -->
-            </tbody>
-        </table>
-    </div>
 
-    <!-- Buttons for Actions -->
-    <div class="button-container">
-        <button onclick="calculateFinalPrice()">Calculate Final Price</button>
-        <button onclick="downloadCSV()">Download CSV</button>
-    </div>
+    <!-- Pricing Table Section (Initially Hidden) -->
+    <section class="pricing-table-section">
+        <div class="table-container">
+            <table id="pricingTable">
+                <thead>
+                    <tr>
+                        <th>Product ID</th>
+                        <th>Product Name</th>
+                        <th>Category</th>
+                        <th>Demand</th>
+                        <th>Time of Day</th>
+                        <th>Weather Condition</th>
+                        <th>Stock Level</th>
+                        <th>Location</th>
+                        <th>Season</th>
+                        <th>Price Sensitivity</th>
+                        <th>Competitor Price</th>
+                        <th>Promotion</th>
+                        <th>Base Price</th>
+                        <th>Final Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be inserted dynamically -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Action Buttons Section -->
+    <section class="buttons-section">
+        <div class="button-container">
+            <button onclick="calculateFinalPrice()">Calculate Final Price</button>
+            <button onclick="downloadCSV()">Download CSV</button>
+        </div>
+    </section>
 
 </body>
 </html>

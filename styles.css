@@ -1,279 +1,363 @@
-/* General Styles */
+/* Reset default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body Styling */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f7f7f7;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
     color: #333;
-    margin: 20px;
-    text-align: center;
+    padding: 20px;
 }
 
-/* Header */
-h1 {
-    color: #008080;
-    margin-bottom: 20px;
-    font-size: 2rem;
-}
-
-/* File Upload */
-input[type="file"] {
-    display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
-    border: 2px solid #008080;
-    border-radius: 5px;
-    font-size: 16px;
-    background-color: #fff;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-}
-
-input[type="file"]:hover {
-    border-color: #005f5f;
-    background: #f0f8ff;
-}
-
-/* Button Styling */
-.button-container {
+/* Main Heading Section */
+/* Hero Section Styling */
+.hero-section {
+    background-color: #FFC0CB; /* Background color */
+    background-image: url('your-image-url.jpg'); /* Optional: Add a background image */
+    background-size: cover;
+    background-position: center;
+    height: 40vh; /* Full viewport height */
     display: flex;
     justify-content: center;
-    gap: 15px;
-    margin-top: 20px;
-}
-
-button {
-    padding: 12px 20px;
-    background-color: #008080;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: 0.3s ease;
-}
-
-button:hover {
-    background-color: #006666;
-    transform: scale(1.05);
-}
-
-button:focus {
-    outline: none;
-}
-
-/* Rules Section */
-.rules-container {
-    width: 90%;
-    max-width: 900px;
-    margin: 30px auto;
-    padding: 20px;
-    background: linear-gradient(135deg, #008080, #005f5f);
-    color: white;
-    border-radius: 12px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    align-items: center;
     text-align: center;
+    color: #333;
+    padding: 20px;
 }
 
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    max-width: 90%;
+    margin: 0;
+}
+
+/* Optional: Add responsiveness */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+}
+/* Upload Section Styling */
+.upload-section {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* File Upload Container */
+.upload-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+}
+
+.upload-container input[type="file"] {
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    background-color: #fff;
+    width: 100%;
+    max-width: 350px;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.upload-container input[type="file"]:hover {
+    border-color: #FFC0CB;
+}
+
+.upload-container button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    background-color: #FFC0CB;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    max-width: 350px;
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+.upload-container button:hover {
+    background-color: #FFC0CB;
+}
+
+.upload-container p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+}
+/* Rules Section Styling */
+.rules-container {
+    flex: 1;
+    max-width: 500px;
+    margin-top: 0;
+    background-color: #fff; /* Added background for better contrast */
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styling */
 .rules-container h2 {
     font-size: 1.8rem;
-    margin-bottom: 15px;
-    text-transform: uppercase;
+    color: #FFC0CB;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: left; /* Align header to the left */
 }
 
+/* Rules List Styling */
 .rules-list {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
+/* List Item Styling */
 .rules-list li {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
     display: flex;
     align-items: center;
-    font-size: 1.1rem;
-    padding: 12px;
-    margin: 8px 0;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 8px;
-    transition: 0.3s ease-in-out;
-    justify-content: center;
+    justify-content: start; /* Align text to start */
+    padding-left: 25px; /* Padding to create space between icon and text */
 }
 
-.rules-list li:hover {
-    background: rgba(255, 255, 255, 0.3);
-    transform: scale(1.02);
-}
-
+/* Icon Styling */
 .rules-list li i {
-    margin-right: 12px;
-    font-size: 1.4rem;
-    color: #ffeb3b;
+    color: #FFC0CB;
+    margin-right: 15px; /* Increased margin for better separation */
 }
 
-/* Table Styling */
-.table-container {
-    display: none; /* Initially hidden */
-    margin: 20px;
-    overflow-x: auto;
-    width: 100%;
-    margin-top: 20px;
+/* Icon Font Size */
+.rules-list li i.fas {
+    font-size: 1.3rem;
 }
 
-table {
-    width: 90%;
-    margin: 0 auto;
-    border-collapse: collapse;
-    background-color: #fff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
+/* Make the section responsive */
+@media (max-width: 768px) {
+    .rules-container {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    .rules-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .rules-list li {
+        font-size: 1rem;
+    }
 }
 
-th, td {
-    padding: 16px;
-    text-align: center;
-    border: 1px solid #ddd;
-}
+/* Add responsiveness */
+@media (max-width: 768px) {
+    .upload-section {
+        flex-direction: column;
+        align-items: center;
+    }
 
-th {
-    background-color: #008080;
-    color: #fff;
-    font-weight: bold;
-}
+    .upload-container,
+    .rules-container {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
 
-td {
+    .upload-container input[type="file"],
+    .upload-container button {
+        width: 90%;
+        max-width: none;
+    }
+
+    .rules-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .rules-list li {
+        font-size: 1rem;
+    }
+}
+/* Pricing Table Section */
+.pricing-table-section {
+    padding: 20px;
     background-color: #f9f9f9;
 }
 
-/* Table Inputs */
-td input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 14px;
-    text-align: center;
-    background-color: #fff;
-    transition: 0.3s ease;
+/* Table Container for Scrolling */
+.table-container {
+    max-width: 100%;
+    overflow-x: auto; /* Enables horizontal scroll */
+    overflow-y: auto; /* Enables vertical scroll */
+    max-height: 400px; /* Sets max height for vertical scroll */
 }
 
-td input:focus {
-    background-color: #f0f8ff;
-    border-color: #008080;
-    outline: none;
+/* Table Styling */
+#pricingTable {
+    width: 100%;
+    border-collapse: collapse; /* Collapses table borders */
+    min-width: 800px; /* Minimum width to allow horizontal scrolling */
+    table-layout: fixed; /* Fix the layout of the table */
+}
+
+/* Table Header Styling */
+#pricingTable thead {
+    background-color:#FFC0CB ;
+    color: white;
+}
+
+#pricingTable th {
+    padding: 12px;
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* Table Body Styling */
+#pricingTable tbody {
+    background-color: #fff;
+}
+
+#pricingTable td {
+    padding: 12px;
+    text-align: left;
+    font-size: 1rem;
+    color: #555;
+    border-top: 1px solid #ddd; /* Light border for rows */
+}
+
+/* Zebra Striping for Rows */
+#pricingTable tbody tr:nth-child(even) {
+    background-color: #f4f4f4;
 }
 
 /* Responsive Design */
-@media screen and (max-width: 1200px) {
-    h1 {
-        font-size: 1.8rem;
+@media (max-width: 768px) {
+    .table-container {
+        max-height: 300px;
     }
 
-    table {
-        width: 95%;
+    #pricingTable th, #pricingTable td {
+        padding: 8px; /* Reduced padding for small screens */
     }
 
-    button {
-        width: 100%;
-        padding: 12px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    h1 {
-        font-size: 1.6rem;
-    }
-
-    table {
-        width: 100%;
-        margin: 10px 0;
-    }
-
-    input[type="file"] {
-        width: 90%;
-        margin: 10px auto;
-    }
-
-    td input {
-        font-size: 12px;
-        padding: 8px;
-    }
-
-    button {
-        width: 100%;
-        padding: 15px;
-        font-size: 14px;
+    #pricingTable {
+        min-width: 600px; /* Reduced table min-width for smaller screens */
     }
 }
-
-@media screen and (max-width: 480px) {
-    h1 {
-        font-size: 1.4rem;
-    }
-
-    table {
-        width: 100%;
-        margin: 10px 0;
-    }
-
-    td input {
-        font-size: 11px;
-        padding: 7px;
-    }
-
-    button {
-        font-size: 12px;
-        padding: 12px;
-    }
+/* Buttons Section Styling */
+.buttons-section {
+    padding: 20px;
+    background-color:#FFC0CB;
+    display: flex;
+    justify-content: center; /* Centers buttons horizontally */
+    align-items: center;
+    flex-direction: column;
 }
 
-
-/* Upload Button Styling */
-.upload-container {
-    text-align: center;
-    margin-bottom: 20px;
+/* Button Container Styling */
+.button-container {
+    display: flex;
+    gap: 20px; /* Adds space between the buttons */
+    
 }
 
-#uploadButton {
-    padding: 12px 20px;
-    background-color: #008080;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: 0.3s;
-}
-
-#uploadButton:hover {
-    background-color: #006666;
-}
-
-#fileName {
-    display: block;
-    margin-top: 10px;
-    font-size: 14px;
-    color: #555;
-}
-
-.alert {
-    padding: 15px;
-    margin: 10px auto;
-    width: 80%;
-    border-radius: 5px;
+/* Button Styling */
+.button-container button {
+    background-color:#f4f4f4 ; /* Teal background */
+    color: black;
+    font-size: 1.1rem;
     font-weight: bold;
-    display: none;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+    padding: 12px 24px; /* Adds padding inside the button */
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition on hover */
+}
+
+/* Button Hover Effect */
+.button-container button:hover {
+    background-color: #ff3700; /* Accent color on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+/* Button Active Effect */
+.button-container button:active {
+    background-color: #ff5700; /* Darker shade when clicked */
+    transform: scale(1); /* Normal size when clicked */
+}
+
+/* Responsive Design: Stack buttons vertically on smaller screens */
+@media (max-width: 768px) {
+    .button-container {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 10px; /* Reduced gap between buttons */
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .upload-container input[type="file"] {
+        width: 100%;
+    }
+
+    .button-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #pricingTable th,
+    #pricingTable td {
+        font-size: 0.8rem;
+    }
+}
+
+/* Alert Styling */
+.custom-alert {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    animation: fadeInOut 3s ease-in-out;
 }
 
 /* Success Alert */
-.alert.success {
-    background: #d4edda;
-    color: #155724;
-    border-left: 5px solid #28a745;
+.custom-alert.success {
+    background-color: #4CAF50;
+    color: #333;
 }
 
+/* Error Alert */
+.custom-alert.error {
+    background-color: #FF5733;
+    color: white;
+}
+
+/* Fade In and Out Animation */
+@keyframes fadeInOut {
+    0% { opacity: 0; transform: translateX(-50%) translateY(-10px); }
+    10% { opacity: 1; transform: translateX(-50%) translateY(0); }
+    90% { opacity: 1; }
+    100% { opacity: 0; transform: translateX(-50%) translateY(-10px); }
+}

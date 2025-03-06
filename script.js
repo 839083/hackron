@@ -156,3 +156,19 @@ function downloadCSV() {
 document.addEventListener("DOMContentLoaded", function () {
     document.querySelector(".table-container").style.display = "none";
 });
+
+
+
+function showAlert(message, type) {
+    const alertBox = document.createElement("div");
+    alertBox.classList.add("custom-alert", type);
+    alertBox.textContent = message;
+
+    document.body.appendChild(alertBox);
+
+    // Remove alert after 3 seconds
+    setTimeout(() => {
+        alertBox.remove();
+    }, 3000);
+}
+
