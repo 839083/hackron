@@ -1,0 +1,31 @@
+ProductID,ProductName,Category,Demand,TimeOfDay,WeatherCondition,StockLevel,Location,Season,PriceSensitivity,CompetitorPrice,Promotion,BasePrice,FinalPrice
+31,Gaming Console,Electronics,High,Morning,Sunny,45,Store A,Summer,High,450,Discount 10%,400,NA
+32,Raincoat,Clothing,Medium,Afternoon,Cloudy,25,Store B,Winter,Medium,110,Discount 5%,90,NA
+33,Microwave,Home Goods,Low,Evening,Rainy,15,Store A,Winter,Low,90,None,80,NA
+34,Sunscreen,Beauty,High,Morning,Sunny,35,Store C,Summer,Medium,45,Discount 15%,35,NA
+35,Bluetooth Earbuds,Electronics,Medium,Afternoon,Cloudy,65,Store B,Summer,High,120,None,100,NA
+36,Standing Desk,Furniture,Low,Evening,Rainy,20,Store C,Winter,Medium,190,None,170,NA
+37,Casual Shirt,Clothing,Medium,Morning,Sunny,50,Store A,Summer,High,75,Discount 10%,65,NA
+38,Air Purifier,Home Goods,High,Afternoon,Cloudy,55,Store C,Winter,Medium,130,Discount 20%,110,NA
+39,Conditioner,Beauty,Low,Evening,Rainy,12,Store B,Winter,Low,20,None,15,NA
+40,Desktop Computer,Electronics,High,Morning,Sunny,75,Store A,Summer,High,850,Discount 10%,750,NA
+41,Fitness Tracker,Electronics,High,Morning,Sunny,55,Store C,Summer,Medium,200,None,180,NA
+42,Sandals,Clothing,Medium,Evening,Cloudy,30,Store A,Summer,High,90,Discount 15%,80,NA
+43,Wireless Mouse,Electronics,Low,Morning,Cloudy,25,Store B,Summer,Medium,50,None,45,NA
+44,Dining Table,Furniture,High,Afternoon,Sunny,18,Store C,Winter,Medium,240,Discount 10%,200,NA
+45,Lipstick,Beauty,High,Evening,Rainy,65,Store A,Winter,High,35,None,30,NA
+46,Vacuum Cleaner,Home Goods,Low,Morning,Cloudy,45,Store C,Winter,Low,400,Discount 20%,350,NA
+47,Blender,Home Goods,High,Afternoon,Sunny,35,Store A,Summer,Medium,60,Discount 5%,50,NA
+48,Monitor,Electronics,Medium,Evening,Cloudy,70,Store C,Winter,High,600,None,550,NA
+49,Trousers,Clothing,High,Morning,Sunny,50,Store B,Summer,Medium,55,Discount 10%,50,NA
+50,Duffle Bag,Sports,Low,Afternoon,Rainy,28,Store A,Summer,High,35,None,30,NA
+51,Smart Light Bulb,Home Goods,High,Evening,Cloudy,38,Store C,Winter,Medium,120,Discount 10%,110,NA
+52,Recliner Sofa,Furniture,Medium,Morning,Sunny,65,Store A,Summer,Low,280,Discount 5%,250,NA
+53,Rice Cooker,Home Goods,Low,Afternoon,Cloudy,55,Store B,Winter,Medium,50,None,40,NA
+54,Leather Belt,Clothing,High,Evening,Rainy,45,Store C,Summer,Low,55,Discount 10%,50,NA
+55,Popcorn Maker,Home Goods,Low,Morning,Sunny,15,Store A,Summer,High,70,None,65,NA
+56,VR Headset,Electronics,High,Afternoon,Cloudy,70,Store B,Summer,Medium,300,Discount 15%,250,NA
+57,Winter Boots,Clothing,Medium,Evening,Rainy,50,Store C,Winter,High,90,None,60,NA
+58,E-Reader,Electronics,High,Morning,Sunny,45,Store A,Summer,Low,250,Discount 10%,200,NA
+59,Formal Suit,Clothing,Low,Afternoon,Cloudy,25,Store B,Winter,High,100,None,90,NA
+60,Home Theater System,Electronics,Medium,Evening,Rainy,35,Store A,Summer,Medium,180,Discount 5%,150,NA

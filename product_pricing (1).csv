@@ -1,0 +1,31 @@
+ProductID,ProductName,Category,Demand,TimeOfDay,WeatherCondition,StockLevel,Location,Season,PriceSensitivity,CompetitorPrice,Promotion,BasePrice,FinalPrice
+1,Smart Phone,Electronics,High,Morning,Sunny,50,Store A,Summer,High,550,10%,500,NA
+2,Winter Jacket,Clothing,Medium,Afternoon,Cloudy,30,Store B,Winter,Medium,120,5%,100,NA
+3,Coffee Maker,Home Goods,Low,Evening,Rainy,20,Store A,Winter,Low,80,None,70,NA
+4,Face Cream,Beauty,High,Morning,Sunny,40,Store C,Summer,Medium,50,15%,40,NA
+5,Wireless Headset,Electronics,Medium,Afternoon,Cloudy,70,Store B,Summer,High,150,None,140,NA
+6,Office Chair,Furniture,Low,Evening,Rainy,25,Store C,Winter,Medium,200,None,180,NA
+7,Summer Dress,Clothing,Medium,Morning,Sunny,60,Store A,Summer,High,80,10%,70,NA
+8,Electric Heater,Home Goods,High,Afternoon,Cloudy,50,Store C,Winter,Medium,120,20%,100,NA
+9,Shampoo,Beauty,Low,Evening,Rainy,10,Store B,Winter,Low,15,None,12,NA
+10,Laptop,Electronics,High,Morning,Sunny,80,Store A,Summer,High,1000,10%,900,NA
+11,Smart Watch,Electronics,High,Morning,Sunny,60,Store C,Summer,Medium,250,None,230,NA
+12,Running Shoes,Clothing,Medium,Evening,Cloudy,40,Store A,Summer,High,100,15%,90,NA
+13,Bluetooth Speaker,Electronics,Low,Morning,Cloudy,30,Store B,Summer,Medium,60,None,55,NA
+14,Bed Frame,Furniture,High,Afternoon,Sunny,20,Store C,Winter,Medium,250,Discount 10%,220,NA
+15,Hair Dryer,Beauty,High,Evening,Rainy,70,Store A,Winter,High,40,None,35,NA
+16,Refrigerator,Home Goods,Low,Morning,Cloudy,50,Store C,Winter,Low,500,Discount 20%,450,NA
+17,Toaster,Home Goods,High,Afternoon,Sunny,40,Store A,Summer,Medium,60,Discount 5%,55,NA
+18,TV,Electronics,Medium,Evening,Cloudy,80,Store C,Winter,High,700,None,650,NA
+19,Jeans,Clothing,High,Morning,Sunny,60,Store B,Summer,Medium,70,Discount 10%,65,NA
+20,Gym Bag,Sports,Low,Afternoon,Rainy,30,Store A,Summer,High,40,None,35,NA
+21,Smart Thermostat,Home Goods,High,Evening,Cloudy,40,Store C,Winter,Medium,150,Discount 10%,130,NA
+22,Massage Chair,Furniture,Medium,Morning,Cloudy,70,Store A,Summer,Low,300,None,280,NA
+23,Electric Kettle,Home Goods,Low,Afternoon,Cloudy,60,Store B,Winter,Medium,50,Discount 5%,45,NA
+24,Backpack,Clothing,High,Evening,Rainy,50,Store C,Summer,Low,60,Discount 5%,55,NA
+25,Ice Cream Maker,Home Goods,Low,Morning,Cloudy,10,Store A,Summer,High,80,Discount 15%,75,NA
+26,Drone,Electronics,High,Afternoon,Cloudy,80,Store B,Summer,Medium,400,None,350,NA
+27,Sneakers,Clothing,Medium,Evening,Rainy,60,Store C,Winter,High,80,Discount 10%,70,NA
+28,Tablet,Electronics,High,Morning,Sunny,50,Store A,Summer,Low,270,Discount 15%,110,NA
+29,Jacket,Clothing,Low,Afternoon,Cloudy,30,Store B,Winter,High,300,Discount 5%,140,NA
+30,Speaker,Electronics,Medium,Evening,Rainy,40,Store A,Summer,Medium,150,Discount 5%,120,NA
